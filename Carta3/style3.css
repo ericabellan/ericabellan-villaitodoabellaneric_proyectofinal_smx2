@@ -1,86 +1,50 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .text-section {
-    text-align: right;
-    margin-left: 20px;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: #555;
-    margin: 10px 0 20px;
-  }
-  
-  .btn {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .btn:hover {
-    background-color: #333;
-  }
-  
-  .image-section {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .image-section img {
-    width: 100%;
-    height: auto;
-    max-height: 80vh; /* Ajusta la altura máxima de la imagen */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-    border-radius: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
-    }
-  
-    .header {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .text-section {
-      max-width: 50%;
-    }
-  
-    .image-section {
-      max-width: 50%;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  max-width: 300px;
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
